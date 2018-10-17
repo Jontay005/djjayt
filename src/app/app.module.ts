@@ -11,6 +11,7 @@ import { BookComponent } from './book/book.component';
 import { MixesComponent } from './mixes/mixes.component';
 import { LibraryComponent } from './library/library.component';
 import { MenuComponent } from './menu/menu.component';
+import { UpcomingShowsComponent } from './upcoming-shows/upcoming-shows.component';
 
 
 const appRoutes = [
@@ -28,7 +29,8 @@ const appRoutes = [
     BookComponent,
     MixesComponent,
     LibraryComponent,
-    MenuComponent
+    MenuComponent,
+    UpcomingShowsComponent
   ],
   imports: [
     BrowserModule,
