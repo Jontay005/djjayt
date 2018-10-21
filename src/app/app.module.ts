@@ -12,13 +12,17 @@ import { MixesComponent } from './mixes/mixes.component';
 import { LibraryComponent } from './library/library.component';
 import { MenuComponent } from './menu/menu.component';
 import { UpcomingShowsComponent } from './upcoming-shows/upcoming-shows.component';
+import { HomeComponent } from './home/home.component';
+import { ShowsComponent } from './shows/shows.component';
 
 
-const appRoutes = [
-  {path: '', component: AppComponent},
-  {path: 'book', component: BookComponent},
+const appRoutes : Routes = [
+  // {path: '', component: AppComponent},
+  {path: '', component: HomeComponent},
+  {path: 'book', component: BookComponent}, 
   {path: 'mixes', component: MixesComponent},
-  {path: 'library', component: LibraryComponent} 
+  {path: 'library', component: LibraryComponent},
+  { path: '**', component: HomeComponent } 
 ] 
 
 @NgModule({
@@ -30,7 +34,9 @@ const appRoutes = [
     MixesComponent,
     LibraryComponent,
     MenuComponent,
-    UpcomingShowsComponent
+    UpcomingShowsComponent,
+    HomeComponent,
+    ShowsComponent
   ],
   imports: [
     BrowserModule,
