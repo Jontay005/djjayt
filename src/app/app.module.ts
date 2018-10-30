@@ -2,8 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
-
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -13,7 +11,6 @@ import { LibraryComponent } from './library/library.component';
 import { MenuComponent } from './menu/menu.component';
 import { UpcomingShowsComponent } from './upcoming-shows/upcoming-shows.component';
 import { HomeComponent } from './home/home.component';
-import { ShowsComponent } from './shows/shows.component';
 
 
 const appRoutes : Routes = [
@@ -22,6 +19,7 @@ const appRoutes : Routes = [
   {path: 'book', component: BookComponent}, 
   {path: 'mixes', component: MixesComponent},
   {path: 'library', component: LibraryComponent},
+  {path: 'upcoming-shows', component: UpcomingShowsComponent},
   { path: '**', component: HomeComponent } 
 ] 
 
@@ -35,9 +33,9 @@ const appRoutes : Routes = [
     LibraryComponent,
     MenuComponent,
     UpcomingShowsComponent,
-    HomeComponent,
-    ShowsComponent
-  ],
+    HomeComponent
+  ], 
+
   imports: [
     BrowserModule,
     HttpClientModule,
