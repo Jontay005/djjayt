@@ -1,3 +1,46 @@
 <div>
-  <h1> SHows coming soon</h1>
+  <h3>  {{ title }} </h3>
+
+</div>
+
+<div>
+<br />
+<br />
+<table class="table table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Venue</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let show of shows">
+        <td>
+            <a>  
+                {{ show.date }}
+            </a>
+        </td>
+        <td>
+            <a> 
+                {{ show.Location }}
+            </a>
+        </td>
+        <td>
+            <a>
+                {{ shows.venue }}
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">&nbsp;</td>
+        <td>
+            
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">No Shows for now</td>
+    </tr>
+</table>
+<!-- Number of Customers: -->
+<br />
 </div>
